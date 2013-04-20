@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Coastal County Snapshots - NOAA Coastal Services Center</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="_/css/style.css">
+</head>
+
+<body>
+<div id="main">
+  <div class="close"><img src="_/img/cross.png" alt="Close"/></div>
+  <p id="welcome"><strong>Welcome to the Coastal County Snapshots</strong><br>
+    The Coastal County Snapshots turn complex data into easy-to-understand stories, complete with charts and graphs.</p>
+  <div class="toolbar_wrapper">
+    <p class="download">Print This Snapshot</p>
+    <p class="reset">Start Over</p>
+    <div class="toolbar">
+      <p><a href="#pane1">Select Snapshot</a> <a href="#pane2">Select County</a></p>
+    </div>
+    <div class="panes">
+      <div id="pane1" class="hide">
+        <div class="floatleft">
+          <button type="button" name="flood" value="flood">
+          <p><strong>Flood Exposure</strong><br>
+            The Flood Snapshot provides local officials with a quick look at a county&rsquo;s demographics, infrastructure, and environment within the flood zone.</p>
+          </button>
+          <br>
+          <p><a href="faq/flood-exposure.pdf">Frequently Asked Questions</a></p>
+        </div>
+        <div class="floatright">
+          <button type="button" name="ocean" value="ocean">
+          <p><strong>Ocean Jobs</strong><br>
+            The Ocean and Great Lakes Jobs Snapshot provides a quick look at the economic value of jobs that are dependent on the Great Lakes and oceans.</p>
+          </button>
+          <p><a href="faq/ocean-jobs.pdf">Frequently Asked Questions</a></p>
+        </div>
+        <div class="floatleft">
+          <button type="button" name="wetlands" value="wetlands">
+          <p><strong>Wetland Benefits</strong><br>
+            The Wetland Benefits Snapshot provides a quick look at how wetlands contribute to safer, cleaner, and more economically productive coastal communities.</p>
+          </button>
+          <p><a href="faq/wetland-benefits.pdf">Frequently Asked Questions</a></p>
+        </div>
+        <div class="annouce floatright">
+          <p><strong>Announcements</strong><br>
+            The following data have been updated as of December 2012:</p>
+          <ul>
+            <li>Economic data in the Ocean Jobs and Wetland Benefits snapshots</li>
+          </ul>
+        </div>
+      </div>
+      <div id="pane2" class="hide">
+        <select id="stateList">
+          <option value="0">Select State</option>
+        </select>
+        <select id="countyList">
+          <option value="0">Select County</option>
+        </select>
+        <div id="flashContent"></div>
+      </div>
+    </div>
+  </div>
+  <div id="snapshot"></div>
+  <div class="footer">
+    <p class="floatleft"><a href="http://oceanservice.noaa.gov" target="_blank">National Ocean Service</a><br>
+      <a href="http://www.noaa.gov" target="_blank">National Oceanic and Atmospheric Administration</a><br>
+      <a href="http://www.doc.gov" target="_blank">United States Department of Commerce</a></p>
+    <p class="floatleft"><a href="http://csc.noaa.gov/PrivacyPolicy/privacyPolicy.html" target="_blank">Privacy Policy</a><br>
+      <a href="http://www.noaa.gov/disclaimer.html" target="_blank">Disclaimer</a><br>
+      <a href="http://www.usa.gov" target="_blank">USA.gov</a></p>
+    <p class="floatright"><a href="http://www.csc.noaa.gov" target="_blank"><img src="_/img/noaa-csc-logo.png"/></a></p>
+  </div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+<script src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=2.4"></script> 
+<script src="_/js/snapshot.min.js"></script>
+<script src="_/js/snapshot.js"></script> 
+</body>
+</html>
